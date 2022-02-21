@@ -1,0 +1,98 @@
+<html>
+    <style>
+        body{
+            background-color: lightskyblue;
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Blue door")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "The Blue door brings you comfort and eternal stillness. Do you wish to go to sleep?";
+            }
+            else if(myChoice === "Red door")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "The Red door brings you knowledge and clarity, but it requires bravery. Do you accept this great responsibility?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "goodnightmoon.png"
+                myQuestion.innerHTML = "Goodnight.";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "Then there is still more reason for you to keep walking.";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "bloom.jpg"
+                myQuestion.innerHTML = "Let your path to growth begin.";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "Your courage will come in time.";
+            }
+        }
+    </script>
+    <body>
+
+        <h1>The Fateful Doors</h1>
+        <br>
+        <img src="doors.png" id="mainImage">
+    <div id="question">
+    <br>
+       Bob had lost direction in his life. He had experienced the deepest kind of sadness, loneliness, and emptiness.
+        <br>
+        But he had experienced enough effortless, meaningful joy in his life to remember what it was like. And so he walked, aimlessly, until he found something that could help him remember.
+         <br>
+        
+        It felt like he had been traveling for days, when he came upon two doors nestled deep in the forest.
+        <br>
+        The left door was blue. The right door was red. His body was tired and he knew this was the place. He had to make a decision.
+    </div>
+       
+        <br>
+        <input type="text" size="30" id="choice" value="Please enter Red door or Blue door">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="choice2" value="Enter yes or no." style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Enter yes or no."  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+
+</html>
