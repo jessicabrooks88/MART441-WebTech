@@ -1,0 +1,1 @@
+This one I know I will have to fix. I'm really confused about how to code with arrays and will need help finding more resources. I'm a visual learner and if I can see the code I am supposed to be using or have an idea of where to start it will be easier for me to learn. So I was able to do the css, the html, but I need to fix the js file. Or at least better understand it.
