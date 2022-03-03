@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>OOP</title>
+    <script>
+        class Person {
+			constructor( eyeColor, hairColor ) {
+				this.eyeColor = eyeColor;
+				this.hairColor = hairColor;
+			}
+			get eColor() {
+				return this.eyeColor;
+			}
+			set eColor(eyeColor) {
+				this.eyeColor = eyeColor;
+			}
+			toString() {
+				let str;
+				str = 'This person has ' + 
+				this.eyeColor + ' eyes, has '
+				+ this.hairColor +
+				return str;
+			}
+		}
+
+        function createAndShow()
+        {
+		        let myPerson = new Person( 'brunette', 'green');
+				document.getElementById("myPerson").innerHTML = myPerson.toString();
+				
+    
+        {
+        function createAndShow()
+        {
+		        let myPerson = new Person( 'blue', 'red');
+				document.getElementById("myPerson").innerHTML = myPerson.toString();
+				
+                    
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="myPerson"></div>
+    
+
+    <script>
+        createAndShow();
+        
+    </script>
+</body>
+</html>
