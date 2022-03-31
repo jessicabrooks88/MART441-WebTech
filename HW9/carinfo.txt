@@ -1,0 +1,6 @@
+<bike>
+	<manufacturer>Chevy</manufacturer>
+	<model>Malibu</model>
+	<year>2006</year>
+	<price>$5000</price>
+</bike>

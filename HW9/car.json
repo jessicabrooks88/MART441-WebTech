@@ -1,0 +1,14 @@
+{
+    "manufacturer" : "Chevy",
+    "model" : "Malibu",
+    "owner" : {
+        "firstName" : "Nick",
+        "lastName" : "Jones"
+    },
+    "colors" : [
+        "grey",
+        "white",
+        "red",
+        "black"
+    ]
+}
