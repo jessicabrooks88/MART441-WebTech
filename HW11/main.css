@@ -1,0 +1,6 @@
+#myCanvas {
+    border: blue;
+    border-style: lined;
+    border-width: 15px;
+    background-color: lightgreen;
+  }
