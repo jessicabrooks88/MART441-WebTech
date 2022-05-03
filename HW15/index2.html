@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>My node.js</title>
+      <style>
+         body{
+            background-color: aquamarine;
+         }
+      </style>
+      <script>
+         function refreshPage()
+         {
+            const params = new URLSearchParams(window.location.search)
+            var fName = params.get("firstName");
+            var lName = params.get("lastName");
+            var refresh = params.has("norefresh");
+            if(!refresh)
+            {
+               window.location = "index2.html?firstName=" + fName + "&lastName=" + lName + "&norefresh=1";
+            }
+            
+         }
+      </script>
+   </head>
+   
+   <body onload="refreshPage();">
+     <h1>
+       Hello!
+     </h1>
+     <span>Bill Williams</span>
+     
+     
+   </body>
+</html>
